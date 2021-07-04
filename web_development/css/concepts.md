@@ -34,6 +34,14 @@ LoadHTML  --> Parse HTML --> Document Object Model(DOM)                         
   2. IDs
   3. Classes, pseudo-classes, attribute
   4. Elements, pseudo-elements
+  * The last declaration in the code will override all other declarations and will be applied. 
+  * Only use !important as a last reource. It's better to use correct specificities - more maintainable code!
+  * The universal selector * has no specificity value (0,0,0,0);
+  * Rely more on specificity than on the order of selectors;
+  * But, rely on order when using 3rd-party stylesheets - always put your author stylesheet last.
+
+
+  
   
   
   
