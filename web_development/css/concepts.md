@@ -7,6 +7,7 @@
   less http requests, less code, compress code, use a css preprocessor, less images, compress images(use less bandwidth for the end users)
   
 ## How CSS Works Behind the Scenes:
+```
 LoadHTML  --> Parse HTML --> Document Object Model(DOM)                                                                                          --|
                   |                                                                                                                                |
                   |               Resolve conflistion CSS declarations(cascade)                                                                    |- Render Tree
@@ -15,4 +16,6 @@ LoadHTML  --> Parse HTML --> Document Object Model(DOM)                         
                                                                                                                                                             |
                                                                                                                                                             |
                             Final rendered website <--------- Website rendering: the visual formatting model <-----------------------------------------------
-                            
+```
+
+
