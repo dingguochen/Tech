@@ -39,6 +39,70 @@ LoadHTML  --> Parse HTML --> Document Object Model(DOM)                         
   * The universal selector * has no specificity value (0,0,0,0);
   * Rely more on specificity than on the order of selectors;
   * But, rely on order when using 3rd-party stylesheets - always put your author stylesheet last.
+  
+## How Units are converted from relative to absolute
+### Font based
+* em(font) - ```x * parent computed font-size```
+* em(length) - ```x * current element computed font-size```
+* rem - ```x * root element computed font-size```
+### Viewport based
+* vw - ```x * 1% of viewport width```
+* vh - ```x * 1% of viewport height```
+
+## Inheritance: What you need to know
+* Inheritance passes the values for some specific properties from parents to children - more maintainable code
+* Properties related to text are inherited: font-family, font-size, color, etc. padding, margin etc are not inherited.
+* Inheritance of a property only works if no one declares a value for that property
+* The inherit keyword forces inheritance on a certain property.
+* The initial keyword resets a property to its initial value.
+
+## The Visual Formatting Model
+Algorithm that calculates boxes and determines the layout of these boxes, for each element in the render tree, in order to determine the final layout of the page.
+* Dimension of boxes: the box model
+* Box type: inline, block and inline-block
+* Positioning scheme: floats and positioning;
+* Stacking contexts;
+* Other elements in the render tree;
+* Viewport size, dimensions of image etc;
+
+## Box Types: Inline, Block, and Inline Block
+### Block-level boxes
+* Elements formatted visually as blocks
+* 100% of parent's width
+* Vertically one after another
+* Box-model applies as showed
+### Inline boxes
+* Content is distributed in lines
+* Occupies only content's space
+* No line-breaks
+* No heights and widths
+* Paddings and margins only horizontal(left and right)
+### Inline-block
+* A mix of block and inline
+* Occupies on content's space
+* No line-breaks
+* Box-model applies as showed
+
+## Positionning Schemes: Normal flow, Absolute positioning and Floats
+### Normal flow
+* Default positioning scheme;
+* Not floated;
+* Not absolutely positioned;
+* Elements laid out according to their source order
+### Floats
+* Element is removed from the normal flow;
+* Text and inline elements will wrap around the floated element;
+* The container will not adjust its height to the element;
+### Absolute positioning
+* Element is removed from the normal flow
+* No impact on surrounding content of elements
+* We use top, bottom, left and right to offset the element from its relatively positioned container.
+
+## Stacking Contexts
+* Z-index
+* Opacity, transform...
+
+
 
 
   
