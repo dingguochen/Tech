@@ -102,6 +102,33 @@ Algorithm that calculates boxes and determines the layout of these boxes, for ea
 * Z-index
 * Opacity, transform...
 
+## The Think - Build - Architect Mindset
+To write clean, modular, reusable, and ready for growth code.
+### Think
+Think about the layout of your webpage or web app before writing code
+* Modular building blocks that make up interfaces
+* Held together by the layout of the page
+* Re-usable across a project, and between different projects
+* Indepent allowing us to use them anywhere on the page
+### Build
+Build your layout in HTML and CSS with a consistent structure for naming classes
+* BEM - Block Element Modifier 
+* Block: standalone component that is meaningful on its own
+* Element: part of a block that has no standalone meaning.
+* Modifier: a different version of a block or an element.
+### Architect
+Create a logical architecture for your CSS with files and folders
+* The 7-1 Pattern: 7 different folders for partial Sass files and 1 main Sass file to import all other files into a compiled CSS stylesheet
+* 7 folders: base/, components/, layout/, pages/, themes/, abstracts/, vendors/
+
+## Basic Responsive Design Principles
+### Fulid Grids and Layouts
+To allow content to easily adapt to the current viewport width used to browse the website. Uses % rather than px for all layout-related lengths.
+### Flexible/Responsive Images
+Images behave differently than text content, and so we need to ensure that they also adapt nicely to the current viewport.
+### Media Queries
+To change styles on certain viewport widths(breakpoints), allowing us to create different version of our website for different widths
+
 
 
 
