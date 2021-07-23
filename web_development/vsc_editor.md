@@ -1,0 +1,2 @@
+## Exension
+. prettier
